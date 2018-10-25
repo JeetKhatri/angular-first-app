@@ -1,5 +1,9 @@
 <h2>servers</h2>
 <button class="btn btn-primary" [disabled]="!allowNewServer">Add server</button>
+<p [innerText]="allowNewServer"></p>
+<p>{{allowNewServer}}</p>
 <app-server></app-server>
 <app-server></app-server>
+<!--if you want to output something in template than use String interpolation-->
+<!--if you want to change some property in html element, directive, component than use property binding-->
 
