@@ -31,8 +31,8 @@ class Car {
 
 // Instantiate (create) an object from a class
 
-let car = new Car(5);
-car.accelerate();
-car.getSpeed();
+let obj = new Car(5);
+obj.accelerate();
+obj.getSpeed();
 
 console.log(Car.numberOfWheels());
