@@ -1,9 +1,14 @@
-<h2>servers</h2>
+<hr><br>
+<h3>servers Name: {{serverName}}</h3>
+<input 
+  type="text" 
+  class="form-control"
+  (input)="onUpdateServerName($event)">
+<br>
 <div [innerText]="allowNewServer"></div>
 <div>{{allowNewServer}}</div>
 <!--if you want to output something in template than use String interpolation-->
 <!--if you want to change some property in html element, directive, component than use property binding-->
-<br>
 <!-- Property Binding use '[' -->
 <!-- Event Binding use '(' -->
 <!-- In Event Binding, if we use onclick property then just need to write click -->
