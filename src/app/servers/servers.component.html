@@ -33,7 +33,15 @@
 <!-- Event Binding use '(' -->
 <!-- In Event Binding, if we use onclick property then just need to write click -->
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add server</button>
-<h5>{{serverCreationStatus}}</h5>
+<!--<h5>{{serverCreationStatus}}</h5>-->
+<!--  If Condition -->
+<p *ngIf="serverCreated">Server was created, Server name is {{serverName}}</p>
+<!--  If else Condition -->
+<!--<p *ngIf="serverCreated; else noServer">Server was created, Server name is {{serverName}}</p>
+<ng-template #noServer>
+  <p>No server created.</p>
+</ng-template>-->
+
 <br>
 <app-server></app-server>
 <app-server></app-server>
