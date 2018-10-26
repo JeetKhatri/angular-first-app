@@ -1,9 +1,29 @@
 <hr><br>
-<h3>servers Name: {{serverName}}</h3>
-<input 
-  type="text" 
-  class="form-control"
-  (input)="onUpdateServerName($event)">
+<h3>Binding servers Name: {{serverName}}</h3>
+<!-- Event Binding : only read -->
+<!-- two way Binding : both read write -->
+<table>
+  <tr>
+    <td>Event Binding</td>
+    <td>
+        <input 
+        type="text" 
+        class="form-control"
+        (input)="onUpdateServerName($event)">
+    </td>
+  </tr>
+  <tr>
+    <td>Two way data binding</td>
+    <td>
+        <input 
+        type="text" 
+        class="form-control"
+        [(ngModel)]="serverName">
+    </td>
+  </tr>
+</table>
+
+
 <br>
 <div [innerText]="allowNewServer"></div>
 <div>{{allowNewServer}}</div>
