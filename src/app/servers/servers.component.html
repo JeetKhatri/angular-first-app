@@ -43,6 +43,5 @@
 </ng-template>-->
 
 <br><br><br>
-<app-server></app-server>
-<app-server></app-server>
-
+<app-server *ngFor="let server of servers"></app-server>
+<!--servers is property define in the typescript file-->
