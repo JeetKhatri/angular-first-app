@@ -1,4 +1,6 @@
-<p [ngStyle]="{backgroundColor: getColor()}">{{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{onlinecls: getServerStatus() === 'Online' }">
+{{ 'server' }} with ID {{ serverId }} is {{ getServerStatus() }}</p>
 <!-- 
     serverId <- attribute,
     getServerStatus <- function
